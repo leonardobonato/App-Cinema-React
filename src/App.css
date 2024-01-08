@@ -1,0 +1,26 @@
+header{
+    height: 120px;
+    width: 100vw;
+}
+
+select {
+    padding: 10px; /* Adicione um preenchimento para melhorar a aparência e a usabilidade */
+    border: 1px solid #ccc; /* Adicione uma borda para destacar o elemento */
+    border-radius: 5px; /* Adicione cantos arredondados */
+    background-color: #fff; /* Escolha uma cor de fundo apropriada */
+    color: #333; /* Escolha uma cor de texto legível */
+    -webkit-appearance: none; /* Oculte a seta em navegadores WebKit */
+    -moz-appearance: none; /* Oculte a seta em navegadores Firefox */
+    appearance: none; /* Oculte a seta em navegadores que suportam a propriedade appearance */
+  }
+  /* Adicione uma seta personalizada usando um pseudo-elemento ::after */
+  select::after {
+    content: "\25BC"; /* Código da seta para baixo */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Evita que o pseudo-elemento interfira com a seleção */
+  }
+  
+
